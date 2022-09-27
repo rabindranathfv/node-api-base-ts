@@ -1,0 +1,1 @@
+export const generateRandomId = (): string => (Math.random()*1024).toString(36).slice(3)
