@@ -1,3 +1,0 @@
-[cupones]
-cantidad = 5
-algoritmo = numerosSecuenciales
