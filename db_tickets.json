@@ -1,0 +1,64 @@
+{
+  "tickets": [
+    {
+      "id": "bzlvwwpvl",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "u4hbu9qmo",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "wa5uugnxr",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "b53azgtnk",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "9e2zyv8hh",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "000001",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000002",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000003",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000004",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000005",
+      "description": "some random description",
+      "date": "2022-09-28T21:22:29.532Z",
+      "type": "numerosSecuenciales"
+    }
+  ]
+}

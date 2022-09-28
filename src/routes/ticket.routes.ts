@@ -1,7 +1,7 @@
 import { Router, Request, Response, NextFunction } from "express";
 // import cron from 'node-cron';
 
-import { automaticGenerateTicketsCtrl, generateTicketsCtrl } from './../controllers/ticket.controller';
+import { automaticGenerateTicketsCtrl, generateTicketsCtrl, getTicketsCtrl } from './../controllers/ticket.controller';
 import { filePayloadExist } from './../middlewares/filePayloadExist';
 import { fileSizeLimiter } from './../middlewares/fileSizeLimiter';
 import { fileExtensionLimit } from './../middlewares/fileExtensionLimit';
@@ -139,7 +139,6 @@ const router = Router();
  *                  type: string
  *                  description: message about the failed upload process
  */
-
 router.post('',[filePayloadExist,fileExtensionLimit(ALLOWED_EXT_TYPES),fileSizeLimiter], (_req: Request, res: Response, _next: NextFunction) => {
   generateTicketsCtrl(_req, res, _next)
 })
@@ -184,6 +183,48 @@ router.post('',[filePayloadExist,fileExtensionLimit(ALLOWED_EXT_TYPES),fileSizeL
  */
 router.get('/generate', (_req: Request, res: Response, _next: NextFunction) => {
   automaticGenerateTicketsCtrl(_req, res, _next)
+})
+
+/**
+ * @swagger
+ * /ticket:
+ *  get:
+ *    summary: get all tickets
+ *    tags: [Tickets]
+ *    responses:
+ *      '200':
+ *        description: generate tickets from files from body request
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                ok:
+ *                  type: boolean
+ *                  description: return false
+ *                msg:
+ *                  type: string
+ *                  description: msg from the endpoint used
+ *                tickets:
+ *                  type: array
+ *                  items:
+ *                    $ref: '#/components/schemas/Ticket'
+ *      500:
+ *        description: server side error
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                ok:
+ *                  type: boolean
+ *                  description: return false
+ *                msg:
+ *                  type: string
+ *                  description: msg from the endpoint used
+ */
+router.get('', (_req: Request, res: Response, _next: NextFunction) => {
+  getTicketsCtrl(_req, res, _next)
 })
 
 export default router;

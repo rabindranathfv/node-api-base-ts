@@ -3,8 +3,10 @@ import displayRoutes from 'express-routemap'
 import app from './app'
 import validateEnv from './utils/validateEnv'
 import { PORT, NODE_ENV } from './config/config'
+import { createConnection } from './db/db';
 
-validateEnv()
+validateEnv();
+createConnection();
 const server = app
 
 server.listen(PORT, () => {

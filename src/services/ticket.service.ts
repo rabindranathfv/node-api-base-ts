@@ -2,9 +2,10 @@
 import { Response, Request, NextFunction } from 'express';
 import fs from 'fs';
 import { CONFIG_FILES, CONFIG_PATH } from '../config/config';
+import { getConnection } from '../db/db';
 
 import { FileInput, FileInputConfig } from './../interfaces/file.interface';
-import { AlgorithmTypes } from '../types/types';
+import { AlgorithmTypes, Ticket } from '../types/types';
 import { INCREMENTAL_CODE } from '../constants';
 
 import { generateRandomId } from '../helpers/generateRandomId';
@@ -46,7 +47,7 @@ export const generateTickets = async (req: Request, res: Response, _next: NextFu
       return res.status(200).json({
         ok: true,
         msg: 'ticket generated suceesfully',
-        tickets: ticketsDone && await (await ticketsDone).filter(f=>f)
+        tickets: ticketsDone && await (await ticketsDone).filter(f=>f).flat()
       });
     } else {
       const { amountTickets, algorithmType } = startCreateTickets(filesAttach.data.data)
@@ -79,10 +80,12 @@ export const automaticGenerateTickets = async (_req: Request, res: Response, _ne
         return amountTickets && algorithmType && await processTicket(Number(amountTickets), algorithmType)
       }))
 
+    ticketsDone && createTickets(await (await ticketsDone).filter(f=>f) as Ticket[])
+
     return res.status(200).json({
       ok: true,
       msg: 'ticket generated suceesfully',
-      tickets: ticketsDone && await (await ticketsDone).filter(f=>f)
+      tickets: ticketsDone && await (await ticketsDone).filter(f=>f).flat()
     });
   } catch (error) {
     console.log(error)
@@ -90,5 +93,35 @@ export const automaticGenerateTickets = async (_req: Request, res: Response, _ne
       ok: false,
       msg: 'server side error generating tickets using GET Method'
     })
+  }
+}
+
+export const getTickets = async (_req: Request, res: Response, _next: NextFunction) => {
+  try {
+    const tickets = getConnection().get('tickets').values()
+
+    return res.status(200).json({
+      ok: true,
+      msg: 'ticket generated suceesfully',
+      tickets
+    });
+  } catch (error) {
+    console.log(error)
+    return res.status(500).json({
+      ok: false,
+      msg: 'server side error getAllTickets'
+    })
+  }
+}
+
+const createTickets = async (tickets: Ticket[]) => {
+  try {
+    const plainTickets = tickets.flat()
+    for (let index = 0; index < plainTickets.length; index++) {
+      getConnection().get('tickets').push(plainTickets[index]).write()
+    }
+    console.log("paso x aqui")
+  } catch (error) {
+    console.log('Error insert into DB', error)
   }
 }

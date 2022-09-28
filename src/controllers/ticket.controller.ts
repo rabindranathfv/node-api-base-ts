@@ -1,5 +1,5 @@
-import { Response, Request, NextFunction} from 'express';
-import { automaticGenerateTickets, generateTickets } from '../services/ticket.service';
+import { Response, Request, NextFunction } from 'express';
+import { automaticGenerateTickets, generateTickets, getTickets } from '../services/ticket.service';
 
 export const generateTicketsCtrl = (req: Request, res: Response, _next: NextFunction): void => {
   try {
@@ -16,6 +16,18 @@ export const generateTicketsCtrl = (req: Request, res: Response, _next: NextFunc
 export const automaticGenerateTicketsCtrl = (req: Request, res: Response, _next: NextFunction): void => {
   try {
     automaticGenerateTickets(req, res, _next);
+  } catch (error) {
+    console.log(error)
+    res.status(400).json({
+      ok: false,
+      msg: 'error client side'
+    })
+  }
+}
+
+export const getTicketsCtrl = (req: Request, res: Response, _next: NextFunction): void => {
+  try {
+    getTickets(req, res, _next);
   } catch (error) {
     console.log(error)
     res.status(400).json({
