@@ -2,18 +2,18 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import fileUpload from 'express-fileupload'
+import fileUpload from 'express-fileupload';
 import expressStatusMonitor from 'express-status-monitor';
 
 //swagger
-import swaggerUi from "swagger-ui-express";
+import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 import { options } from './swaggerOptions';
 
 import { configStatusMonitor } from './config/monitorStatus'
 import { corsConfig } from './config/corsConfig';
 import routerPost from './routes/post.routes';
-import routerTicket from './routes/ticket.routes'
+import routerTicket from './routes/ticket.routes';
 
 const app = express()
 
@@ -24,7 +24,7 @@ app.use(cors(corsConfig))
 app.use(helmet())
 app.use(morgan('dev'))
 app.use(fileUpload({ createParentPath: true }))
-app.use(express.static("public"));
+app.use(express.static('public'));
 
 const swaggerSpecs = swaggerJSDoc(options)
 
@@ -36,6 +36,6 @@ app.get('/api/v1/alive', (_req, res) => {
   res.send('API up and running')
 })
 
-app.use("/api/v1/docs",swaggerUi.serve, swaggerUi.setup( swaggerSpecs ));
+app.use('/api/v1/docs',swaggerUi.serve, swaggerUi.setup( swaggerSpecs ));
 
 export default app

@@ -10,10 +10,6 @@
     "linter": "ts-standard",
     "linter-fix": "ts-standard --fix",
     "tsc": "tsc",
-    "predev": "npm run swagger",
-    "prebuild": "npm run swagger",
-    "swagger": "tsoa spec",
-    "dev": "concurrently \"node\" \"node -x tsoa spec\"",
     "test": "jest --watchAll",
     "test-coverage": "jest --watchAll --coverage"
   },

@@ -1,15 +1,19 @@
 
 import { Response, Request, NextFunction } from 'express';
+import fs from 'fs';
+import { CONFIG_FILES, CONFIG_PATH } from '../config/config';
+
+import { FileInput, FileInputConfig } from './../interfaces/file.interface';
+import { AlgorithmTypes } from '../types/types';
+import { INCREMENTAL_CODE } from '../constants';
+
+import { generateRandomId } from '../helpers/generateRandomId';
+import { incrementalId } from './../helpers/generateIncrementalId';
+import { startCreateTicketsConfig } from '../helpers/startCreateTicketConfig';
+import { startCreateTickets } from './../helpers/startCreateTicket';
 
 import { parseObjectType } from './../utils/parseObjectType';
-
-import { FileInput } from './../interfaces/file.interface';
-import { AMOUNT_DEF, ALGORITHM_DEF, INCREMENTAL_CODE } from '../constants';
-import { AlgorithmTypes } from '../types/types';
-import { asignAlgorithmType } from './../utils/asignAlgorithmType';
-import { generateRandomId } from './../utils/generateRandomId';
-import { incrementalId } from './../helpers/generateIncrementalId';
-
+import { clearProcessData } from './../utils/clearProcessData';
 
 const processTicket = (amountTickets: number , algorithmType: AlgorithmTypes) => {
   return new Promise( (resolve) => {
@@ -35,39 +39,56 @@ export const generateTickets = async (req: Request, res: Response, _next: NextFu
     let ticketsDone;
     if (Array.isArray(filesAttach)) {
         ticketsDone = Promise.all(filesAttach.map( async (file: FileInput) => {
-        const buffer = Buffer.from(file.data.data);
-        const bufferToCleanStr = buffer.toString().replace(/[^A-Za-z0-9]/g, ' ').split(' ').filter(v => v);
-        const amountIndex = bufferToCleanStr.indexOf(AMOUNT_DEF) + 1;
-        const algorithmIndex = bufferToCleanStr.indexOf(ALGORITHM_DEF) + 1;
-        const amountTickets: string | undefined = bufferToCleanStr[amountIndex];
-        const algorithmType: AlgorithmTypes | undefined = asignAlgorithmType(bufferToCleanStr[algorithmIndex]);
+        const { amountTickets, algorithmType } = startCreateTickets(file.data.data)
         return amountTickets && algorithmType && await processTicket(Number(amountTickets), algorithmType)
       }))
 
       return res.status(200).json({
         ok: true,
         msg: 'ticket generated suceesfully',
-        ticketsDone: ticketsDone && await (await ticketsDone).filter(f=>f)
+        tickets: ticketsDone && await (await ticketsDone).filter(f=>f)
       });
     } else {
-      const buffer = Buffer.from(filesAttach.data.data);
-      const bufferToCleanStr = buffer.toString().replace(/[^A-Za-z0-9]/g, ' ').split(' ').filter(v => v);
-      const amountIndex = bufferToCleanStr.indexOf(AMOUNT_DEF) + 1;
-      const algorithmIndex = bufferToCleanStr.indexOf(ALGORITHM_DEF) + 1;
-      const amountTickets: string | undefined = bufferToCleanStr[amountIndex];
-      const algorithmType: AlgorithmTypes | undefined = asignAlgorithmType(bufferToCleanStr[algorithmIndex]);
+      const { amountTickets, algorithmType } = startCreateTickets(filesAttach.data.data)
       const ticketDone = amountTickets && algorithmType && await processTicket(Number(amountTickets), algorithmType)
       return res.status(200).json({
         ok: true,
         msg: 'ticket generated suceesfully',
-        ticketsDone: ticketDone && await ticketDone
+        tickets: ticketDone && await ticketDone
       });
     }
   } catch (error) {
     console.log(error)
     return res.status(500).json({
       ok: false,
-      msg: 'server side error generating tickets'
+      msg: 'server side error generating tickets using POST method'
+    })
+  }
+}
+
+export const automaticGenerateTickets = async (_req: Request, res: Response, _next: NextFunction) => {
+  try {
+    let filesToRead: any[] = [];
+    for (let index = 1; index <= Number(CONFIG_FILES); index++) {
+      const fileData = fs.readFileSync(`${CONFIG_PATH}${index}.txt`, { encoding: 'utf-8'})
+      filesToRead.push({ path: `${CONFIG_PATH}${index}.txt`, data: clearProcessData(fileData)})
+    }
+    // console.log("🚀 ~ file: ticket.service.ts ~ line 69 ~ automaticGenerateTickets ~ configPath", filesToRead)
+    const ticketsDone = Promise.all(filesToRead.map( async (file: FileInputConfig) => {
+        const { amountTickets, algorithmType } = startCreateTicketsConfig(file)
+        return amountTickets && algorithmType && await processTicket(Number(amountTickets), algorithmType)
+      }))
+
+    return res.status(200).json({
+      ok: true,
+      msg: 'ticket generated suceesfully',
+      tickets: ticketsDone && await (await ticketsDone).filter(f=>f)
+    });
+  } catch (error) {
+    console.log(error)
+    return res.status(500).json({
+      ok: false,
+      msg: 'server side error generating tickets using GET Method'
     })
   }
 }

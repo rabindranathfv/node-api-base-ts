@@ -87,7 +87,7 @@ router.get('', (_req: Request, res: Response, _next: NextFunction) => {
  *        content:
  *          application/json:
  *            schema:
-  *              type: object
+ *              type: object
  *              properties:
  *                ok:
  *                  type: boolean

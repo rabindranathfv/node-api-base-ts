@@ -1,0 +1,3 @@
+[cupones]
+cantidad = 5
+algoritmo = numerosAleatorios
