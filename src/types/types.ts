@@ -9,7 +9,9 @@ export enum AlgorithmTypes {
 
 export interface Ticket {
   id: string;
+  title: string;
   description: string;
+  creator: string;
   date: Date;
   type: AlgorithmTypes
 }

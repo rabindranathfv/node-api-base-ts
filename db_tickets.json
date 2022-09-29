@@ -1,3 +1,484 @@
 {
-  "tickets": []
+  "tickets": [
+    {
+      "id": "4jzjg9mk",
+      "title": "Title-6hf51vwm7",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "8qg12kdw8",
+      "title": "Title-tw9xdjhgm",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "o5p441ial",
+      "title": "Title-l5u6s6f9j",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "ndauoajt8",
+      "title": "Title-8v422gkm3",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "n3t3xcto",
+      "title": "Title-5ysyiv12f",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "000001",
+      "title": "Title-000001",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000002",
+      "title": "Title-000002",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000003",
+      "title": "Title-000003",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000004",
+      "title": "Title-000004",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000005",
+      "title": "Title-000005",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000006",
+      "title": "Title-000006",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000007",
+      "title": "Title-000007",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000008",
+      "title": "Title-000008",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000009",
+      "title": "Title-000009",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000010",
+      "title": "Title-000010",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000011",
+      "title": "Title-000011",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000012",
+      "title": "Title-000012",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000013",
+      "title": "Title-000013",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000014",
+      "title": "Title-000014",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000015",
+      "title": "Title-000015",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "jciqq9cub",
+      "title": "Title-qwxyydrm",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "rohue98qn",
+      "title": "Title-lp2rwbpe",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "vs0t75hd",
+      "title": "Title-aydd3thb6",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "rtfhi1y1j",
+      "title": "Title-zc5ju06ll",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "kg8txdq27",
+      "title": "Title-e9r2ks8pk",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "000001",
+      "title": "Title-000001",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000002",
+      "title": "Title-000002",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000003",
+      "title": "Title-000003",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000004",
+      "title": "Title-000004",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000005",
+      "title": "Title-000005",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000006",
+      "title": "Title-000006",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000007",
+      "title": "Title-000007",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000008",
+      "title": "Title-000008",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000009",
+      "title": "Title-000009",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000010",
+      "title": "Title-000010",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000011",
+      "title": "Title-000011",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000012",
+      "title": "Title-000012",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000013",
+      "title": "Title-000013",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000014",
+      "title": "Title-000014",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000015",
+      "title": "Title-000015",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "fbzndn9c",
+      "title": "Title-8cpg6x21",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "i4g29lc7q",
+      "title": "Title-efollwczs",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "en30rl18",
+      "title": "Title-3dstspuf",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "t9vd6607w",
+      "title": "Title-ipfjfm2t",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "eygiqad0k",
+      "title": "Title-5mzyhg2g",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race.",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosAleatorios"
+    },
+    {
+      "id": "000001",
+      "title": "Title-000001",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000002",
+      "title": "Title-000002",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000003",
+      "title": "Title-000003",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000004",
+      "title": "Title-000004",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000005",
+      "title": "Title-000005",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000006",
+      "title": "Title-000006",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000007",
+      "title": "Title-000007",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000008",
+      "title": "Title-000008",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000009",
+      "title": "Title-000009",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000010",
+      "title": "Title-000010",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000011",
+      "title": "Title-000011",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000012",
+      "title": "Title-000012",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000013",
+      "title": "Title-000013",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000014",
+      "title": "Title-000014",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    },
+    {
+      "id": "000015",
+      "title": "Title-000015",
+      "description": "This character description generator will generate a fairly random description of a belonging to a random race. ",
+      "creator": "Creators Mock Name",
+      "date": "2022-09-29",
+      "type": "numerosSecuenciales"
+    }
+  ]
 }

@@ -21,11 +21,11 @@ const processTicket = (amountTickets: number , algorithmType: AlgorithmTypes) =>
     let tickets = [];
     switch (algorithmType) {
       case AlgorithmTypes.RANDOMIDS:
-        tickets = Array.from({length: amountTickets}, () => ({ id: generateRandomId() , description: 'some random description', date: new Date(), type: algorithmType}))
+        tickets = Array.from({length: amountTickets}, () => ({ id: generateRandomId() , title: `Title-${generateRandomId()}`,description: 'This character description generator will generate a fairly random description of a belonging to a random race.', creator: 'Creators Mock Name', date: new Date().toISOString().split('T')[0], type: algorithmType}))
         break;
       default:
         for (let index = 1; index <= amountTickets; index++) {
-          tickets.push({ id: incrementalId(index.toString(), INCREMENTAL_CODE) , description: 'some random description', date: new Date(), type: algorithmType})
+          tickets.push({ id: incrementalId(index.toString(), INCREMENTAL_CODE) , title: `Title-${ incrementalId(index.toString(), INCREMENTAL_CODE)}`, description: 'This character description generator will generate a fairly random description of a belonging to a random race. ', creator: 'Creators Mock Name', date: new Date().toISOString().split('T')[0], type: algorithmType})
         }
         break;
     }
