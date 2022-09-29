@@ -107,6 +107,8 @@ To install the project you need to follow the nexts steps:
 4. Execute "npm run start-dev" for run the project.
 5. Execute GET /ticket/generate endpoint or POST /ticket with body upload .txt files
 
+Another option is create file with name input-traffgen<1 ... n> for update config generations files inside CONFIG folder (at the same level as config.ts)
+
 With all these you will have running the project running in the port 4000 by default waiting for requests.
 
 ## API swagger documentation
